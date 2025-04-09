@@ -27,9 +27,84 @@
     <ClInclude Include="src\MGE\EntryPoint.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\MGE\Log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Events\Event.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Events\KeyEvent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Events\MouseEvent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Events\ApplicationEvent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\precompiled.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Window.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Layer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\LayerStack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\ImGui\ImGuiLayer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MGE\Application.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\Log.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\precompiled.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\Layer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\LayerStack.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\glad\src\glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\ImGui\ImGuiLayer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\imgui\imgui.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\imgui\imgui_demo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\imgui\imgui_draw.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\imgui\imgui_widgets.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\imgui\imgui_tables.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

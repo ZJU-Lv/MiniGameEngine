@@ -15,9 +15,54 @@
     <ClInclude Include="src\MGE\Application.h" />
     <ClInclude Include="src\MGE\Core.h" />
     <ClInclude Include="src\MGE\EntryPoint.h" />
+    <ClInclude Include="src\MGE\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\MGE\Events\Event.h" />
+    <ClInclude Include="src\MGE\Events\KeyEvent.h" />
+    <ClInclude Include="src\MGE\Events\MouseEvent.h" />
+    <ClInclude Include="src\MGE\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="src\MGE\Layer.h" />
+    <ClInclude Include="src\MGE\LayerStack.h" />
+    <ClInclude Include="src\MGE\Log.h" />
+    <ClInclude Include="src\MGE\Window.h" />
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
+    <ClInclude Include="src\precompiled.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MGE\Application.cpp" />
+    <ClCompile Include="src\MGE\ImGui\ImGuiLayer.cpp" />
+    <ClCompile Include="src\MGE\Layer.cpp" />
+    <ClCompile Include="src\MGE\LayerStack.cpp" />
+    <ClCompile Include="src\MGE\Log.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
+    <ClCompile Include="src\precompiled.cpp" />
+    <ClCompile Include="vendor\glad\src\glad.c">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vendor\imgui\imgui.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vendor\imgui\imgui_demo.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vendor\imgui\imgui_draw.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vendor\imgui\imgui_tables.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vendor\imgui\imgui_widgets.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -69,10 +114,17 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>MGE_PLATFORM_WINDOWS;MGE_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)MiniGameEngine\src;$(SolutionDir)MiniGameEngine\vendor\spdlog\include;$(SolutionDir)MiniGameEngine\vendor\glfw\include\;$(SolutionDir)MiniGameEngine\vendor\glad\include\;$(SolutionDir)MiniGameEngine\vendor\imgui\</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)MiniGameEngine\vendor\glfw\lib-vc2019\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -83,12 +135,19 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>MGE_PLATFORM_WINDOWS;MGE_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)MiniGameEngine\src;$(SolutionDir)MiniGameEngine\vendor\spdlog\include;$(SolutionDir)MiniGameEngine\vendor\glfw\include\;$(SolutionDir)MiniGameEngine\vendor\glad\include\;$(SolutionDir)MiniGameEngine\vendor\imgui\</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)MiniGameEngine\vendor\glfw\lib-vc2019\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

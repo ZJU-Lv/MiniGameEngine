@@ -1,0 +1,10 @@
+[submodule "MiniGameEngine/vendor/spdlog"]
+	path = MiniGameEngine/vendor/spdlog
+	url = https://github.com/gabime/spdlog.git
+[submodule "MiniGameEngine/vendor/glfw"]
+	path = MiniGameEngine/vendor/glfw
+	url = https://github.com/glfw/glfw.git
+	branch = master
+[submodule "MiniGameEngine/vendor/imgui"]
+	path = MiniGameEngine/vendor/imgui
+	url = https://github.com/ocornut/imgui.git

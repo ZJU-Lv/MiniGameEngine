@@ -6,7 +6,10 @@ extern MGE::Application* MGE::createApplication();
 
 int main(int argc, char** argv)
 {
-	printf("Mini Game Engine Start!\n");
+	MGE::Log::Init();
+	MGE_CORE_WARN("Initialized Log!");
+	MGE_INFO("Hello!");
+
 	auto app = MGE::createApplication();
 	app->Run();
 	delete app;

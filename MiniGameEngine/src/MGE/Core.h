@@ -9,3 +9,8 @@
 #else
 	#error MGE only supports windows!
 #endif
+
+#define MGE_ASSERT(x, ...) { if(!(x)) { MGE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+#define MGE_CORE_ASSERT(x, ...) { if(!(x)) { MGE_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+
+#define BIT(x) (1 << x)
