@@ -3,6 +3,7 @@
 
 #include "Events/ApplicationEvent.h"
 #include "Log.h"
+#include "MGE/Input.h"
 
 #include <GLFW/glfw3.h>
 
@@ -39,7 +40,7 @@ namespace MGE {
 		EventDispatcher dispatcher(e);
 		dispatcher.Dispatch<WindowCloseEvent>(std::bind(&Application::OnWindowClose, this, std::placeholders::_1));
 
-		MGE_CORE_TRACE("{0}", e.ToString());
+		//MGE_CORE_TRACE("{0}", e.ToString());
 
 		for (auto it = m_LayerStack.end(); it != m_LayerStack.begin(); )
 		{

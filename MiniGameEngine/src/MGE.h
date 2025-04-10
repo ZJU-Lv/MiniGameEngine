@@ -7,6 +7,10 @@
 #include "MGE/Layer.h"
 #include "MGE/Log.h"
 
+#include "MGE/Input.h"
+#include "MGE/KeyCodes.h"
+#include "MGE/MouseButtonCodes.h"
+
 #include "MGE/ImGui/ImGuiLayer.h"
 
 //-------------entry point----------------

@@ -10,12 +10,19 @@ public:
 
 	void OnUpdate() override
 	{
-		MGE_INFO("ExampleLayer::Update");
+		if (MGE::Input::IsKeyPressed(MGE_KEY_TAB))
+			MGE_TRACE("Tab key is pressed (poll)!");
 	}
 
 	void OnEvent(MGE::Event& event) override
 	{
-		MGE_TRACE("{0}", event.ToString());
+		if (event.GetEventType() == MGE::EventType::KeyPressed)
+		{
+			MGE::KeyPressedEvent& e = (MGE::KeyPressedEvent&)event;
+			if (e.GetKeyCode() == MGE_KEY_TAB)
+				MGE_TRACE("Tab key is pressed (event)!");
+			MGE_TRACE("{0}", (char)e.GetKeyCode());
+		}
 	}
 
 };
