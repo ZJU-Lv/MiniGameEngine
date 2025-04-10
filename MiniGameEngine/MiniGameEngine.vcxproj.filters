@@ -60,9 +60,6 @@
     <ClInclude Include="src\MGE\ImGui\ImGuiLayer.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsInput.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -101,7 +98,10 @@
     <ClCompile Include="src\MGE\ImGui\ImGuiLayer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\ImGui\ImGuiBuild.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="vendor\imgui\imgui.cpp">
@@ -113,13 +113,10 @@
     <ClCompile Include="vendor\imgui\imgui_draw.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="vendor\imgui\imgui_widgets.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="vendor\imgui\imgui_tables.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
+    <ClCompile Include="vendor\imgui\imgui_widgets.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

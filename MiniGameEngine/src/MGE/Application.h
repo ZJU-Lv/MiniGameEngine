@@ -4,6 +4,7 @@
 #include "MGE/LayerStack.h"
 #include "MGE/Events/Event.h"
 #include "MGE/Events/ApplicationEvent.h"
+#include "MGE/ImGui/ImGuiLayer.h"
 
 namespace MGE {
 	class MGE_API Application
@@ -25,6 +26,7 @@ namespace MGE {
 
 	private:
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 

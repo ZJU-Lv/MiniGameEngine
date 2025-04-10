@@ -27,18 +27,17 @@
     <ClInclude Include="src\MGE\Log.h" />
     <ClInclude Include="src\MGE\MouseButtonCodes.h" />
     <ClInclude Include="src\MGE\Window.h" />
-    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\precompiled.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MGE\Application.cpp" />
+    <ClCompile Include="src\MGE\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\MGE\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\MGE\Layer.cpp" />
     <ClCompile Include="src\MGE\LayerStack.cpp" />
     <ClCompile Include="src\MGE\Log.cpp" />
-    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\precompiled.cpp" />
@@ -117,9 +116,9 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>MGE_PLATFORM_WINDOWS;MGE_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MGE_PLATFORM_WINDOWS;MGE_BUILD_DLL;_CRT_SECURE_NO_DEPRECATE;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)MiniGameEngine\src;$(SolutionDir)MiniGameEngine\vendor\spdlog\include;$(SolutionDir)MiniGameEngine\vendor\glfw\include\;$(SolutionDir)MiniGameEngine\vendor\glad\include\;$(SolutionDir)MiniGameEngine\vendor\imgui\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MiniGameEngine\src;$(SolutionDir)MiniGameEngine\vendor\spdlog\include;$(SolutionDir)MiniGameEngine\vendor\glfw\include\;$(SolutionDir)MiniGameEngine\vendor\glad\include\;$(SolutionDir)MiniGameEngine\vendor\imgui\;$(SolutionDir)MiniGameEngine\vendor\glm\</AdditionalIncludeDirectories>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
@@ -139,9 +138,9 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>MGE_PLATFORM_WINDOWS;MGE_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MGE_PLATFORM_WINDOWS;MGE_BUILD_DLL;_CRT_SECURE_NO_DEPRECATE;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)MiniGameEngine\src;$(SolutionDir)MiniGameEngine\vendor\spdlog\include;$(SolutionDir)MiniGameEngine\vendor\glfw\include\;$(SolutionDir)MiniGameEngine\vendor\glad\include\;$(SolutionDir)MiniGameEngine\vendor\imgui\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MiniGameEngine\src;$(SolutionDir)MiniGameEngine\vendor\spdlog\include;$(SolutionDir)MiniGameEngine\vendor\glfw\include\;$(SolutionDir)MiniGameEngine\vendor\glad\include\;$(SolutionDir)MiniGameEngine\vendor\imgui\;$(SolutionDir)MiniGameEngine\vendor\glm\</AdditionalIncludeDirectories>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>

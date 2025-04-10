@@ -3835,7 +3835,6 @@ void ImGui::SetActiveID(ImGuiID id, ImGuiWindow* window)
 {
     ImGuiContext& g = *GImGui;
 
-
     if (window != nullptr)
     {
         for (int i = 0; i < window->DC.Layouts.Data.Size; i++)
@@ -3844,7 +3843,6 @@ void ImGui::SetActiveID(ImGuiID id, ImGuiWindow* window)
             IM_DELETE(layout);
         }
     }
-    
     // While most behaved code would make an effort to not steal active id during window move/drag operations,
     // we at least need to be resilient to it. Cancelling the move is rather aggressive and users of 'master' branch
     // may prefer the weird ill-defined half working situation ('docking' did assert), so may need to rework that.
