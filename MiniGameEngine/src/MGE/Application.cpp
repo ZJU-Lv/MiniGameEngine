@@ -5,6 +5,7 @@
 #include "Log.h"
 #include "MGE/Input.h"
 
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
 #include <glm/vec3.hpp> // glm::vec3

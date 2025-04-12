@@ -1,6 +1,6 @@
 #include "MGE.h"
 
-//#include "imgui.h"
+#include "imgui.h"
 
 class ExampleLayer : public MGE::Layer
 {
@@ -16,12 +16,12 @@ public:
 			MGE_TRACE("Tab key is pressed (poll)!");
 	}
 
-	/*virtual void OnImGuiRender() override
+	virtual void OnImGuiRender() override
 	{
 		ImGui::Begin("Test");
 		ImGui::Text("Hello World");
 		ImGui::End();
-	}*/
+	}
 
 	void OnEvent(MGE::Event& event) override
 	{

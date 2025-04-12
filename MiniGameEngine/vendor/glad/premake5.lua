@@ -1,7 +1,6 @@
-project "imgui"
+project "glad"
     kind "StaticLib"
-    language "C++"
-    cppdialect "C++17"
+    language "C"
     staticruntime "on"
     
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
@@ -9,17 +8,14 @@ project "imgui"
 
     files
     {
-        "imconfig.h",
-        "imgui.h",
-        "imgui.cpp",
-        "imgui_draw.cpp",
-        "imgui_internal.h",
-        "imgui_widgets.cpp",
-        "imstb_rectpack.h",
-        "imstb_textedit.h",
-        "imstb_truetype.h",
-        "imgui_demo.cpp",
-        "imgui_tables.cpp"
+        "include/glad/glad.h",
+        "include/KHR/khrplatform.h",
+        "src/glad.c"
+    }
+
+    includedirs
+    {
+        "include"
     }
     
     filter "system:windows"
