@@ -854,6 +854,7 @@
     </ClInclude>
     <ClInclude Include="src\MGE\Renderer\GraphicsContext.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
+    <ClInclude Include="src\MGE\Renderer\Shader.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MGE\Application.cpp">
@@ -884,5 +885,6 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
+    <ClCompile Include="src\MGE\Renderer\Shader.cpp" />
   </ItemGroup>
 </Project>
