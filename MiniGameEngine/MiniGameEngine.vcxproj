@@ -161,9 +161,12 @@
     <ClInclude Include="src\MGE\LayerStack.h" />
     <ClInclude Include="src\MGE\Log.h" />
     <ClInclude Include="src\MGE\MouseButtonCodes.h" />
+    <ClInclude Include="src\MGE\Renderer\Buffer.h" />
     <ClInclude Include="src\MGE\Renderer\GraphicsContext.h" />
+    <ClInclude Include="src\MGE\Renderer\Renderer.h" />
     <ClInclude Include="src\MGE\Renderer\Shader.h" />
     <ClInclude Include="src\MGE\Window.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
@@ -428,7 +431,10 @@
     <ClCompile Include="src\MGE\Layer.cpp" />
     <ClCompile Include="src\MGE\LayerStack.cpp" />
     <ClCompile Include="src\MGE\Log.cpp" />
+    <ClCompile Include="src\MGE\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\MGE\Renderer\Renderer.cpp" />
     <ClCompile Include="src\MGE\Renderer\Shader.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
