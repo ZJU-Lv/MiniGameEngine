@@ -2,6 +2,7 @@
 
 #include "MGE/Log.h"
 #include "MGE/Window.h"
+#include "MGE/Renderer/GraphicsContext.h"
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -30,6 +31,7 @@ namespace MGE {
 		virtual void Shutdown();
 	private:
 		GLFWwindow* m_Window;
+		GraphicsContext* m_Context;
 
 		struct WindowData
 		{
