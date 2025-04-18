@@ -2,6 +2,7 @@
 
 #include "MGE/Core.h"
 #include "MGE/Events/Event.h"
+#include "MGE/Core/Timestep.h"
 
 namespace MGE {
 
@@ -13,7 +14,7 @@ namespace MGE {
 
 		virtual void OnAttach() {}
 		virtual void OnDetach() {}
-		virtual void OnUpdate() {}
+		virtual void OnUpdate(Timestep ts) {}
 		virtual void OnImGuiRender() {}
 		virtual void OnEvent(Event& event) {}
 

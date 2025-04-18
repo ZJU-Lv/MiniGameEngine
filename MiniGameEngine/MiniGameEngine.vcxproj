@@ -149,6 +149,7 @@
     <ClInclude Include="src\MGE.h" />
     <ClInclude Include="src\MGE\Application.h" />
     <ClInclude Include="src\MGE\Core.h" />
+    <ClInclude Include="src\MGE\Core\TimeStep.h" />
     <ClInclude Include="src\MGE\EntryPoint.h" />
     <ClInclude Include="src\MGE\Events\ApplicationEvent.h" />
     <ClInclude Include="src\MGE\Events\Event.h" />
