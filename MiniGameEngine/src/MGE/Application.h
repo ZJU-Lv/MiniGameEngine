@@ -10,6 +10,8 @@
 #include "MGE/Renderer/Buffer.h"
 #include "MGE/Renderer/VertexArray.h"
 
+#include "MGE/Renderer/OrthographicCamera.h"
+
 namespace MGE {
 	class MGE_API Application
 	{
@@ -42,6 +44,7 @@ namespace MGE {
 		std::shared_ptr<Shader> m_BlueShader;
 		std::shared_ptr<VertexArray> m_SquareVA;
 
+		OrthographicCamera m_Camera;
 	private:
 		static Application* s_Instance;
 	};

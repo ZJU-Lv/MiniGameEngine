@@ -163,6 +163,7 @@
     <ClInclude Include="src\MGE\MouseButtonCodes.h" />
     <ClInclude Include="src\MGE\Renderer\Buffer.h" />
     <ClInclude Include="src\MGE\Renderer\GraphicsContext.h" />
+    <ClInclude Include="src\MGE\Renderer\OrthographicCamera.h" />
     <ClInclude Include="src\MGE\Renderer\RenderCommand.h" />
     <ClInclude Include="src\MGE\Renderer\Renderer.h" />
     <ClInclude Include="src\MGE\Renderer\RendererAPI.h" />
@@ -437,6 +438,7 @@
     <ClCompile Include="src\MGE\LayerStack.cpp" />
     <ClCompile Include="src\MGE\Log.cpp" />
     <ClCompile Include="src\MGE\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\MGE\Renderer\OrthographicCamera.cpp" />
     <ClCompile Include="src\MGE\Renderer\RenderCommand.cpp" />
     <ClCompile Include="src\MGE\Renderer\Renderer.cpp" />
     <ClCompile Include="src\MGE\Renderer\RendererAPI.cpp" />
