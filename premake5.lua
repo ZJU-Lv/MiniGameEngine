@@ -17,6 +17,7 @@ IncludeDir["glfw"] = "MiniGameEngine/vendor/glfw/include"
 IncludeDir["glad"] = "MiniGameEngine/vendor/glad/include"
 IncludeDir["imgui"] = "MiniGameEngine/vendor/imgui"
 IncludeDir["glm"] = "MiniGameEngine/vendor/glm"
+IncludeDir["stb_image"] = "MiniGameEngine/vendor/stb_image"
 
 include "MiniGameEngine/vendor/glfw"
 include "MiniGameEngine/vendor/glad"
@@ -43,6 +44,8 @@ project "MiniGameEngine"
 		"%{prj.name}/src/**.cpp",
 		"%{prj.name}/vendor/glm/glm/**.hpp",
 		"%{prj.name}/vendor/glm/glm/**.inl",
+		"%{prj.name}/vendor/stb_image/**.h",
+		"%{prj.name}/vendor/stb_image/**.cpp",
 	}
 
 	defines
@@ -57,7 +60,8 @@ project "MiniGameEngine"
 		"%{IncludeDir.glfw}",
 		"%{IncludeDir.glad}",
 		"%{IncludeDir.imgui}",
-		"%{IncludeDir.glm}"
+		"%{IncludeDir.glm}",
+		"%{IncludeDir.stb_image}"
 	}
 
 	links 

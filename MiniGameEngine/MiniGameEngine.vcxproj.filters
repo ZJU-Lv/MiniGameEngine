@@ -7,14 +7,23 @@
     <Filter Include="src\MGE">
       <UniqueIdentifier>{75902FA9-E16F-AE44-EA87-391B56E614A6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\MGE\Core">
+      <UniqueIdentifier>{ED45CEB9-D9A8-5D5E-822E-96146E7029E1}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src\MGE\Events">
       <UniqueIdentifier>{B986996B-A554-8D71-8EE8-FD977A5569D6}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\MGE\ImGui">
       <UniqueIdentifier>{5FC901F4-CB89-7D2A-94C4-C6A70044C206}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\MGE\Renderer">
+      <UniqueIdentifier>{BB2711AF-A720-3001-D052-1586BCAA0F0D}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src\Platform">
       <UniqueIdentifier>{21CA02E5-0D2D-9289-B6B2-CA3FA2F45D0C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\OpenGL">
+      <UniqueIdentifier>{35A49437-A105-7245-2A73-B8F796D3A804}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\Platform\Windows">
       <UniqueIdentifier>{5B054582-4794-CE4B-F0B2-E246DC20DFF1}</UniqueIdentifier>
@@ -37,6 +46,9 @@
     <Filter Include="vendor\glm\glm\gtx">
       <UniqueIdentifier>{B3A6A76B-9F8A-68C1-08EB-6214F4ED5243}</UniqueIdentifier>
     </Filter>
+    <Filter Include="vendor\stb_image">
+      <UniqueIdentifier>{0DA0BA59-F998-D9AB-22CB-BE300E23B9B7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MGE.h">
@@ -47,6 +59,9 @@
     </ClInclude>
     <ClInclude Include="src\MGE\Core.h">
       <Filter>src\MGE</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Core\TimeStep.h">
+      <Filter>src\MGE\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\MGE\EntryPoint.h">
       <Filter>src\MGE</Filter>
@@ -84,8 +99,53 @@
     <ClInclude Include="src\MGE\MouseButtonCodes.h">
       <Filter>src\MGE</Filter>
     </ClInclude>
+    <ClInclude Include="src\MGE\Renderer\Buffer.h">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Renderer\GraphicsContext.h">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Renderer\OrthographicCamera.h">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Renderer\RenderCommand.h">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Renderer\Renderer.h">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Renderer\RendererAPI.h">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Renderer\Shader.h">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Renderer\Texture.h">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Renderer\VertexArray.h">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClInclude>
     <ClInclude Include="src\MGE\Window.h">
       <Filter>src\MGE</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLShader.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLTexture.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h">
+      <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsInput.h">
       <Filter>src\Platform\Windows</Filter>
@@ -852,20 +912,9 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp">
       <Filter>vendor\glm\glm</Filter>
     </ClInclude>
-    <ClInclude Include="src\MGE\Renderer\GraphicsContext.h" />
-    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
-    <ClInclude Include="src\MGE\Renderer\Shader.h" />
-    <ClInclude Include="src\MGE\Renderer\Renderer.h" />
-    <ClInclude Include="src\MGE\Renderer\Buffer.h" />
-    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
-    <ClInclude Include="src\MGE\Renderer\VertexArray.h" />
-    <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h" />
-    <ClInclude Include="src\MGE\Renderer\RendererAPI.h" />
-    <ClInclude Include="src\MGE\Renderer\RenderCommand.h" />
-    <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h" />
-    <ClInclude Include="src\MGE\Renderer\OrthographicCamera.h" />
-    <ClInclude Include="src\MGE\Core\TimeStep.h" />
-    <ClInclude Include="src\Platform\OpenGL\OpenGLShader.h" />
+    <ClInclude Include="vendor\stb_image\stb_image.h">
+      <Filter>vendor\stb_image</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MGE\Application.cpp">
@@ -886,6 +935,48 @@
     <ClCompile Include="src\MGE\Log.cpp">
       <Filter>src\MGE</Filter>
     </ClCompile>
+    <ClCompile Include="src\MGE\Renderer\Buffer.cpp">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\Renderer\OrthographicCamera.cpp">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\Renderer\RenderCommand.cpp">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\Renderer\Renderer.cpp">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\Renderer\RendererAPI.cpp">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\Renderer\Shader.cpp">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\Renderer\Texture.cpp">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\Renderer\VertexArray.cpp">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLShader.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLTexture.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
       <Filter>src\Platform\Windows</Filter>
     </ClCompile>
@@ -895,17 +986,8 @@
     <ClCompile Include="src\precompiled.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
-    <ClCompile Include="src\MGE\Renderer\Shader.cpp" />
-    <ClCompile Include="src\MGE\Renderer\Renderer.cpp" />
-    <ClCompile Include="src\MGE\Renderer\Buffer.cpp" />
-    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
-    <ClCompile Include="src\MGE\Renderer\VertexArray.cpp" />
-    <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp" />
-    <ClCompile Include="src\MGE\Renderer\RendererAPI.cpp" />
-    <ClCompile Include="src\MGE\Renderer\RenderCommand.cpp" />
-    <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp" />
-    <ClCompile Include="src\MGE\Renderer\OrthographicCamera.cpp" />
-    <ClCompile Include="src\Platform\OpenGL\OpenGLShader.cpp" />
+    <ClCompile Include="vendor\stb_image\stb_image.cpp">
+      <Filter>vendor\stb_image</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
