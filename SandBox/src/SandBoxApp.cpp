@@ -165,6 +165,7 @@ public:
 		m_TextureShader.reset(MGE::Shader::Create(textureShaderVertexSrc, textureShaderFragmentSrc));
 
 		m_Texture = MGE::Texture2D::Create("assets/textures/Checkerboard.png");
+		m_ChernoLogoTexture = MGE::Texture2D::Create("assets/textures/ChernoLogo.png");
 
 		std::dynamic_pointer_cast<MGE::OpenGLShader>(m_TextureShader)->Bind();
 		std::dynamic_pointer_cast<MGE::OpenGLShader>(m_TextureShader)->UploadUniformInt("u_Texture", 0);
@@ -212,7 +213,10 @@ public:
 
 		//MGE::Renderer::Submit(m_Shader, m_VertexArray);
 
-		m_Texture->Bind();
+		m_Texture->Bind(0);
+		MGE::Renderer::Submit(m_TextureShader, m_SquareVA, glm::scale(glm::mat4(1.0f), glm::vec3(1.5f)));
+
+		m_ChernoLogoTexture->Bind(0);
 		MGE::Renderer::Submit(m_TextureShader, m_SquareVA, glm::scale(glm::mat4(1.0f), glm::vec3(1.5f)));
 
 		MGE::Renderer::EndScene();
@@ -236,7 +240,7 @@ private:
 	MGE::Ref<MGE::Shader> m_FlatColorShader, m_TextureShader;
 	MGE::Ref<MGE::VertexArray> m_SquareVA;
 
-	MGE::Ref<MGE::Texture2D> m_Texture;
+	MGE::Ref<MGE::Texture2D> m_Texture, m_ChernoLogoTexture;
 
 	MGE::OrthographicCamera m_Camera;
 	glm::vec3 m_CameraPosition;
