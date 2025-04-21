@@ -92,7 +92,7 @@ public:
 			}
 		)";
 
-		m_Shader.reset(MGE::Shader::Create(vertexSrc, fragmentSrc));
+		m_Shader = MGE::Shader::Create("VertexPosColor", vertexSrc, fragmentSrc);
 
 		std::string flatColorShaderVertexSrc = R"(
 			#version 330 core
@@ -126,9 +126,10 @@ public:
 			}
 		)";
 
-		m_FlatColorShader.reset(MGE::Shader::Create(flatColorShaderVertexSrc, flatColorShaderFragmentSrc));
+		m_FlatColorShader = MGE::Shader::Create("FlatColor", flatColorShaderVertexSrc, flatColorShaderFragmentSrc);
 
-		m_TextureShader.reset(MGE::Shader::Create("assets/shaders/Texture.glsl"));
+		//m_TextureShader = MGE::Shader::Create("assets/shaders/Texture.glsl");
+		m_TextureShader = m_ShaderLibrary.Load("assets/shaders/Texture.glsl");
 
 		m_Texture = MGE::Texture2D::Create("assets/textures/Checkerboard.png");
 		m_ChernoLogoTexture = MGE::Texture2D::Create("assets/textures/ChernoLogo.png");
@@ -180,10 +181,10 @@ public:
 		//MGE::Renderer::Submit(m_Shader, m_VertexArray);
 
 		m_Texture->Bind(0);
-		MGE::Renderer::Submit(m_TextureShader, m_SquareVA, glm::scale(glm::mat4(1.0f), glm::vec3(1.5f)));
+		MGE::Renderer::Submit(m_ShaderLibrary.Get("Texture"), m_SquareVA, glm::scale(glm::mat4(1.0f), glm::vec3(1.5f)));
 
 		m_ChernoLogoTexture->Bind(0);
-		MGE::Renderer::Submit(m_TextureShader, m_SquareVA, glm::scale(glm::mat4(1.0f), glm::vec3(1.5f)));
+		MGE::Renderer::Submit(m_ShaderLibrary.Get("Texture"), m_SquareVA, glm::scale(glm::mat4(1.0f), glm::vec3(1.5f)));
 
 		MGE::Renderer::EndScene();
 	}
@@ -200,6 +201,7 @@ public:
 	}
 
 private:
+	MGE::ShaderLibrary m_ShaderLibrary;
 	MGE::Ref<MGE::Shader> m_Shader;
 	MGE::Ref<MGE::VertexArray> m_VertexArray;
 
