@@ -12,6 +12,7 @@
 #include "MGE/Input.h"
 #include "MGE/KeyCodes.h"
 #include "MGE/MouseButtonCodes.h"
+#include "MGE/OrthographicCameraController.h"
 
 #include "MGE/ImGui/ImGuiLayer.h"
 
