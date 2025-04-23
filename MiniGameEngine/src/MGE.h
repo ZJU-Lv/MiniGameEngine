@@ -27,7 +27,3 @@
 
 #include "MGE/Renderer/OrthographicCamera.h"
 // -----------------------------------
-
-//-------------entry point----------------
-#include "MGE/Core/EntryPoint.h"
-//-------------entry point----------------
