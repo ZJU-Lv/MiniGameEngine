@@ -1,7 +1,7 @@
 #pragma once
 
 #include "precompiled.h"
-#include "MGE/Core.h"
+#include "MGE/Core/Core.h"
 
 namespace MGE {
 

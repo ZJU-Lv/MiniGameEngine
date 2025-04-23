@@ -1,9 +1,9 @@
 #include "precompiled.h"
 #include "Application.h"
 
-#include "Events/ApplicationEvent.h"
+#include "MGE/Events/ApplicationEvent.h"
 #include "Log.h"
-#include "MGE/Input.h"
+#include "MGE/Core/Input.h"
 
 #include <glfw/glfw3.h>
 

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "MGE/Core.h"
+#include "MGE/Core/Core.h"
 #include "MGE/Events/Event.h"
 #include "MGE/Core/Timestep.h"
 

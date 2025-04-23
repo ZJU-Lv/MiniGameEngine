@@ -3,16 +3,16 @@
 // Used only by MGE applications
 
 #include <stdio.h>
-#include "MGE/Application.h"
-#include "MGE/Layer.h"
-#include "MGE/Log.h"
+#include "MGE/Core/Application.h"
+#include "MGE/Core/Layer.h"
+#include "MGE/Core/Log.h"
 
 #include "MGE/Core/Timestep.h"
 
-#include "MGE/Input.h"
-#include "MGE/KeyCodes.h"
-#include "MGE/MouseButtonCodes.h"
-#include "MGE/OrthographicCameraController.h"
+#include "MGE/Core/Input.h"
+#include "MGE/Core/KeyCodes.h"
+#include "MGE/Core/MouseButtonCodes.h"
+#include "MGE/Renderer/OrthographicCameraController.h"
 
 #include "MGE/ImGui/ImGuiLayer.h"
 
@@ -29,5 +29,5 @@
 // -----------------------------------
 
 //-------------entry point----------------
-#include "MGE/EntryPoint.h"
+#include "MGE/Core/EntryPoint.h"
 //-------------entry point----------------

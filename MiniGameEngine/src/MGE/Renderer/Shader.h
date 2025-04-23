@@ -1,6 +1,6 @@
 #pragma once
 
-#include "MGE/Core.h"
+#include "MGE/Core/Core.h"
 
 #include <string>
 #include <unordered_map>

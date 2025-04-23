@@ -7,7 +7,7 @@
 
 #include "GLFW/glfw3.h"
 
-#include "MGE/Application.h"
+#include "MGE/Core/Application.h"
 
 namespace MGE {
 

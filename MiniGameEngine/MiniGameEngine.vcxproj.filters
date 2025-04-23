@@ -54,17 +54,38 @@
     <ClInclude Include="src\MGE.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="src\MGE\Application.h">
-      <Filter>src\MGE</Filter>
+    <ClInclude Include="src\MGE\Core\Application.h">
+      <Filter>src\MGE\Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\MGE\Core.h">
-      <Filter>src\MGE</Filter>
+    <ClInclude Include="src\MGE\Core\Core.h">
+      <Filter>src\MGE\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Core\EntryPoint.h">
+      <Filter>src\MGE\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Core\Input.h">
+      <Filter>src\MGE\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Core\KeyCodes.h">
+      <Filter>src\MGE\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Core\Layer.h">
+      <Filter>src\MGE\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Core\LayerStack.h">
+      <Filter>src\MGE\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Core\Log.h">
+      <Filter>src\MGE\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Core\MouseButtonCodes.h">
+      <Filter>src\MGE\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\MGE\Core\TimeStep.h">
       <Filter>src\MGE\Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\MGE\EntryPoint.h">
-      <Filter>src\MGE</Filter>
+    <ClInclude Include="src\MGE\Core\Window.h">
+      <Filter>src\MGE\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\MGE\Events\ApplicationEvent.h">
       <Filter>src\MGE\Events</Filter>
@@ -81,24 +102,6 @@
     <ClInclude Include="src\MGE\ImGui\ImGuiLayer.h">
       <Filter>src\MGE\ImGui</Filter>
     </ClInclude>
-    <ClInclude Include="src\MGE\Input.h">
-      <Filter>src\MGE</Filter>
-    </ClInclude>
-    <ClInclude Include="src\MGE\KeyCodes.h">
-      <Filter>src\MGE</Filter>
-    </ClInclude>
-    <ClInclude Include="src\MGE\Layer.h">
-      <Filter>src\MGE</Filter>
-    </ClInclude>
-    <ClInclude Include="src\MGE\LayerStack.h">
-      <Filter>src\MGE</Filter>
-    </ClInclude>
-    <ClInclude Include="src\MGE\Log.h">
-      <Filter>src\MGE</Filter>
-    </ClInclude>
-    <ClInclude Include="src\MGE\MouseButtonCodes.h">
-      <Filter>src\MGE</Filter>
-    </ClInclude>
     <ClInclude Include="src\MGE\Renderer\Buffer.h">
       <Filter>src\MGE\Renderer</Filter>
     </ClInclude>
@@ -106,6 +109,9 @@
       <Filter>src\MGE\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\MGE\Renderer\OrthographicCamera.h">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Renderer\OrthographicCameraController.h">
       <Filter>src\MGE\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\MGE\Renderer\RenderCommand.h">
@@ -125,9 +131,6 @@
     </ClInclude>
     <ClInclude Include="src\MGE\Renderer\VertexArray.h">
       <Filter>src\MGE\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="src\MGE\Window.h">
-      <Filter>src\MGE</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h">
       <Filter>src\Platform\OpenGL</Filter>
@@ -915,11 +918,19 @@
     <ClInclude Include="vendor\stb_image\stb_image.h">
       <Filter>vendor\stb_image</Filter>
     </ClInclude>
-    <ClInclude Include="src\MGE\OrthographicCameraController.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\MGE\Application.cpp">
-      <Filter>src\MGE</Filter>
+    <ClCompile Include="src\MGE\Core\Application.cpp">
+      <Filter>src\MGE\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\Core\Layer.cpp">
+      <Filter>src\MGE\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\Core\LayerStack.cpp">
+      <Filter>src\MGE\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\Core\Log.cpp">
+      <Filter>src\MGE\Core</Filter>
     </ClCompile>
     <ClCompile Include="src\MGE\ImGui\ImGuiBuild.cpp">
       <Filter>src\MGE\ImGui</Filter>
@@ -927,19 +938,13 @@
     <ClCompile Include="src\MGE\ImGui\ImGuiLayer.cpp">
       <Filter>src\MGE\ImGui</Filter>
     </ClCompile>
-    <ClCompile Include="src\MGE\Layer.cpp">
-      <Filter>src\MGE</Filter>
-    </ClCompile>
-    <ClCompile Include="src\MGE\LayerStack.cpp">
-      <Filter>src\MGE</Filter>
-    </ClCompile>
-    <ClCompile Include="src\MGE\Log.cpp">
-      <Filter>src\MGE</Filter>
-    </ClCompile>
     <ClCompile Include="src\MGE\Renderer\Buffer.cpp">
       <Filter>src\MGE\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\MGE\Renderer\OrthographicCamera.cpp">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\Renderer\OrthographicCameraController.cpp">
       <Filter>src\MGE\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\MGE\Renderer\RenderCommand.cpp">
@@ -990,6 +995,5 @@
     <ClCompile Include="vendor\stb_image\stb_image.cpp">
       <Filter>vendor\stb_image</Filter>
     </ClCompile>
-    <ClCompile Include="src\MGE\OrthographicCameraController.cpp" />
   </ItemGroup>
 </Project>

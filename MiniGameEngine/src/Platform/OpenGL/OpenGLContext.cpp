@@ -1,6 +1,6 @@
 #include "precompiled.h"
 #include "OpenGLContext.h"
-#include "MGE/Log.h"
+#include "MGE/Core/Log.h"
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>

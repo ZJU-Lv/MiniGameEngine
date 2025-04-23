@@ -1,7 +1,7 @@
 #include "precompiled.h"
 #include "WindowsInput.h"
 
-#include "MGE/Application.h"
+#include "MGE/Core/Application.h"
 #include <GLFW/glfw3.h>
 
 namespace MGE {

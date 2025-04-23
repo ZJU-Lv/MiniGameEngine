@@ -1,8 +1,8 @@
 #include "precompiled.h"
 #include "OrthographicCameraController.h"
 
-#include "MGE/Input.h"
-#include "MGE/KeyCodes.h"
+#include "MGE/Core/Input.h"
+#include "MGE/Core/KeyCodes.h"
 
 namespace MGE {
 

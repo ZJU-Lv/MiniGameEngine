@@ -1,7 +1,7 @@
 #include "Core.h"
 
 #include "Window.h"
-#include "MGE/LayerStack.h"
+#include "MGE/Core/LayerStack.h"
 #include "MGE/Events/Event.h"
 #include "MGE/Events/ApplicationEvent.h"
 

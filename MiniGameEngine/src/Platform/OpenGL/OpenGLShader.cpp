@@ -1,5 +1,5 @@
 #include "precompiled.h"
-#include "MGE/Log.h"
+#include "MGE/Core/Log.h"
 #include "OpenGLShader.h"
 
 #include <fstream>

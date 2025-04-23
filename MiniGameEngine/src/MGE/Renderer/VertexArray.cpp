@@ -1,6 +1,6 @@
 #include "precompiled.h"
 #include "VertexArray.h"
-#include "MGE/Log.h"
+#include "MGE/Core/Log.h"
 
 #include "Renderer.h"
 #include "Platform/OpenGL/OpenGLVertexArray.h"

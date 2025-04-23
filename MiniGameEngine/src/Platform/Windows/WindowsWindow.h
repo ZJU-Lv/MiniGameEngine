@@ -1,7 +1,7 @@
 #pragma once
 
-#include "MGE/Log.h"
-#include "MGE/Window.h"
+#include "MGE/Core/Log.h"
+#include "MGE/Core/Window.h"
 #include "MGE/Renderer/GraphicsContext.h"
 
 #include <glad/glad.h>

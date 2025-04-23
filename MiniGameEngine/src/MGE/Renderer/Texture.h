@@ -2,7 +2,7 @@
 
 #include <string>
 
-#include "MGE/Core.h"
+#include "MGE/Core/Core.h"
 
 namespace MGE {
 

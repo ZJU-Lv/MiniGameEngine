@@ -1,6 +1,6 @@
 #pragma once
 
-#include "MGE/Layer.h"
+#include "MGE/Core/Layer.h"
 
 #include "MGE/Events/ApplicationEvent.h"
 #include "MGE/Events/KeyEvent.h"

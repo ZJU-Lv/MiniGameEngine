@@ -1,6 +1,6 @@
 #include "precompiled.h"
 #include "OpenGLTexture.h"
-#include "MGE/Log.h"
+#include "MGE/Core/Log.h"
 
 #include "stb_image.h"
 

@@ -2,7 +2,7 @@
 
 #include <stdint.h>
 
-#include "MGE/Log.h"
+#include "MGE/Core/Log.h"
 
 namespace MGE {
 

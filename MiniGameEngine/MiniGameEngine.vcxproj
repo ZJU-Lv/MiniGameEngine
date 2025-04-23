@@ -147,32 +147,32 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\MGE.h" />
-    <ClInclude Include="src\MGE\Application.h" />
-    <ClInclude Include="src\MGE\Core.h" />
+    <ClInclude Include="src\MGE\Core\Application.h" />
+    <ClInclude Include="src\MGE\Core\Core.h" />
+    <ClInclude Include="src\MGE\Core\EntryPoint.h" />
+    <ClInclude Include="src\MGE\Core\Input.h" />
+    <ClInclude Include="src\MGE\Core\KeyCodes.h" />
+    <ClInclude Include="src\MGE\Core\Layer.h" />
+    <ClInclude Include="src\MGE\Core\LayerStack.h" />
+    <ClInclude Include="src\MGE\Core\Log.h" />
+    <ClInclude Include="src\MGE\Core\MouseButtonCodes.h" />
     <ClInclude Include="src\MGE\Core\TimeStep.h" />
-    <ClInclude Include="src\MGE\EntryPoint.h" />
+    <ClInclude Include="src\MGE\Core\Window.h" />
     <ClInclude Include="src\MGE\Events\ApplicationEvent.h" />
     <ClInclude Include="src\MGE\Events\Event.h" />
     <ClInclude Include="src\MGE\Events\KeyEvent.h" />
     <ClInclude Include="src\MGE\Events\MouseEvent.h" />
     <ClInclude Include="src\MGE\ImGui\ImGuiLayer.h" />
-    <ClInclude Include="src\MGE\Input.h" />
-    <ClInclude Include="src\MGE\KeyCodes.h" />
-    <ClInclude Include="src\MGE\Layer.h" />
-    <ClInclude Include="src\MGE\LayerStack.h" />
-    <ClInclude Include="src\MGE\Log.h" />
-    <ClInclude Include="src\MGE\MouseButtonCodes.h" />
-    <ClInclude Include="src\MGE\OrthographicCameraController.h" />
     <ClInclude Include="src\MGE\Renderer\Buffer.h" />
     <ClInclude Include="src\MGE\Renderer\GraphicsContext.h" />
     <ClInclude Include="src\MGE\Renderer\OrthographicCamera.h" />
+    <ClInclude Include="src\MGE\Renderer\OrthographicCameraController.h" />
     <ClInclude Include="src\MGE\Renderer\RenderCommand.h" />
     <ClInclude Include="src\MGE\Renderer\Renderer.h" />
     <ClInclude Include="src\MGE\Renderer\RendererAPI.h" />
     <ClInclude Include="src\MGE\Renderer\Shader.h" />
     <ClInclude Include="src\MGE\Renderer\Texture.h" />
     <ClInclude Include="src\MGE\Renderer\VertexArray.h" />
-    <ClInclude Include="src\MGE\Window.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h" />
@@ -437,15 +437,15 @@
     <ClInclude Include="vendor\stb_image\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\MGE\Application.cpp" />
+    <ClCompile Include="src\MGE\Core\Application.cpp" />
+    <ClCompile Include="src\MGE\Core\Layer.cpp" />
+    <ClCompile Include="src\MGE\Core\LayerStack.cpp" />
+    <ClCompile Include="src\MGE\Core\Log.cpp" />
     <ClCompile Include="src\MGE\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\MGE\ImGui\ImGuiLayer.cpp" />
-    <ClCompile Include="src\MGE\Layer.cpp" />
-    <ClCompile Include="src\MGE\LayerStack.cpp" />
-    <ClCompile Include="src\MGE\Log.cpp" />
-    <ClCompile Include="src\MGE\OrthographicCameraController.cpp" />
     <ClCompile Include="src\MGE\Renderer\Buffer.cpp" />
     <ClCompile Include="src\MGE\Renderer\OrthographicCamera.cpp" />
+    <ClCompile Include="src\MGE\Renderer\OrthographicCameraController.cpp" />
     <ClCompile Include="src\MGE\Renderer\RenderCommand.cpp" />
     <ClCompile Include="src\MGE\Renderer\Renderer.cpp" />
     <ClCompile Include="src\MGE\Renderer\RendererAPI.cpp" />

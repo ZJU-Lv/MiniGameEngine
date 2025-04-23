@@ -1,6 +1,6 @@
 #pragma once
 
-#include "MGE/Input.h"
+#include "MGE/Core/Input.h"
 
 namespace MGE {
 

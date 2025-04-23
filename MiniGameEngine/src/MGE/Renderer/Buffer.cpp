@@ -2,7 +2,7 @@
 #include "Buffer.h"
 
 #include "Renderer.h"
-#include "MGE/Log.h"
+#include "MGE/Core/Log.h"
 
 #include "Platform/OpenGL/OpenGLBuffer.h"
 
