@@ -120,6 +120,9 @@
     <ClInclude Include="src\MGE\Renderer\Renderer.h">
       <Filter>src\MGE\Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="src\MGE\Renderer\Renderer2D.h">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClInclude>
     <ClInclude Include="src\MGE\Renderer\RendererAPI.h">
       <Filter>src\MGE\Renderer</Filter>
     </ClInclude>
@@ -918,7 +921,6 @@
     <ClInclude Include="vendor\stb_image\stb_image.h">
       <Filter>vendor\stb_image</Filter>
     </ClInclude>
-    <ClInclude Include="src\MGE\Renderer\Renderer2D.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MGE\Core\Application.cpp">
@@ -952,6 +954,9 @@
       <Filter>src\MGE\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\MGE\Renderer\Renderer.cpp">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\Renderer\Renderer2D.cpp">
       <Filter>src\MGE\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\MGE\Renderer\RendererAPI.cpp">
@@ -996,6 +1001,5 @@
     <ClCompile Include="vendor\stb_image\stb_image.cpp">
       <Filter>vendor\stb_image</Filter>
     </ClCompile>
-    <ClCompile Include="src\MGE\Renderer\Renderer2D.cpp" />
   </ItemGroup>
 </Project>
