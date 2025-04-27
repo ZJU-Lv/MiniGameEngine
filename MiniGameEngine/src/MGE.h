@@ -18,6 +18,7 @@
 
 // ---Renderer------------------------
 #include "MGE/Renderer/Renderer.h"
+#include "MGE/Renderer/Renderer2D.h"
 #include "MGE/Renderer/RenderCommand.h"
 
 #include "MGE/Renderer/Buffer.h"
