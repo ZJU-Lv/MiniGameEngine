@@ -13,6 +13,10 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "MGE/Core/Log.h"
+
+#include "MGE/Debug/Instrumentor.h"
+
 #ifdef MGE_PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif
