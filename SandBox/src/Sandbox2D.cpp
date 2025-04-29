@@ -13,11 +13,14 @@ Sandbox2D::Sandbox2D()
 
 void Sandbox2D::OnAttach()
 {
+	MGE_PROFILE_FUNCTION();
+
 	m_CheckerboardTexture = MGE::Texture2D::Create("assets/textures/Checkerboard.png");
 }
 
 void Sandbox2D::OnDetach()
 {
+	MGE_PROFILE_FUNCTION();
 }
 
 void Sandbox2D::OnUpdate(MGE::Timestep ts)
@@ -25,10 +28,7 @@ void Sandbox2D::OnUpdate(MGE::Timestep ts)
 	MGE_PROFILE_FUNCTION();
 
 	// Update
-	{
-		MGE_PROFILE_SCOPE("CameraController::OnUpdate");
-		m_CameraController.OnUpdate(ts);
-	}
+	m_CameraController.OnUpdate(ts);
 
 	// Render
 	{

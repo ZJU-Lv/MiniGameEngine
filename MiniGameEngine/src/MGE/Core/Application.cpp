@@ -14,6 +14,8 @@ namespace MGE {
 
 	Application::Application()
 	{
+		MGE_PROFILE_FUNCTION();
+
 		MGE_CORE_ASSERT(!s_Instance, "Application already exists!");
 		s_Instance = this;
 
@@ -28,26 +30,41 @@ namespace MGE {
 
 	Application::~Application()
 	{
+		MGE_PROFILE_FUNCTION();
+
+		Renderer::Shutdown();
 	}
 
 	void Application::Run()
 	{
+		MGE_PROFILE_FUNCTION();
+
 		while (m_Running)
 		{
+			MGE_PROFILE_SCOPE("RunLoop");
+
 			float time = (float)glfwGetTime();
 			Timestep timestep = time - m_LastFrameTime;
 			m_LastFrameTime = time;
 
 			if (!m_Minimized)
 			{
-				for (Layer* layer : m_LayerStack)
-					layer->OnUpdate(timestep);
-			}
+				{
+					MGE_PROFILE_SCOPE("LayerStack OnUpdate");
 
-			m_ImGuiLayer->Begin();
-			for (Layer* layer : m_LayerStack)
-				layer->OnImGuiRender();
-			m_ImGuiLayer->End();
+					for (Layer* layer : m_LayerStack)
+						layer->OnUpdate(timestep);
+				}
+
+				m_ImGuiLayer->Begin();
+				{
+					MGE_PROFILE_SCOPE("LayerStack OnImGuiRender");
+
+					for (Layer* layer : m_LayerStack)
+						layer->OnImGuiRender();
+				}
+				m_ImGuiLayer->End();
+			}
 
 			m_Window->OnUpdate();
 		}
@@ -55,6 +72,8 @@ namespace MGE {
 
 	void Application::OnEvent(Event& e)
 	{
+		MGE_PROFILE_FUNCTION();
+
 		EventDispatcher dispatcher(e);
 		dispatcher.Dispatch<WindowCloseEvent>(std::bind(&Application::OnWindowClose, this, std::placeholders::_1));
 		dispatcher.Dispatch<WindowResizeEvent>(std::bind(&Application::OnWindowResize, this, std::placeholders::_1));
@@ -69,12 +88,16 @@ namespace MGE {
 
 	void Application::PushLayer(Layer* layer)
 	{
+		MGE_PROFILE_FUNCTION();
+
 		m_LayerStack.PushLayer(layer);
 		layer->OnAttach();
 	}
 
 	void Application::PushOverlay(Layer* layer)
 	{
+		MGE_PROFILE_FUNCTION();
+
 		m_LayerStack.PushOverlay(layer);
 		layer->OnAttach();
 	}
@@ -87,6 +110,8 @@ namespace MGE {
 
 	bool Application::OnWindowResize(WindowResizeEvent& e)
 	{
+		MGE_PROFILE_FUNCTION();
+
 		if (e.GetWidth() == 0 || e.GetHeight() == 0)
 		{
 			m_Minimized = true;
