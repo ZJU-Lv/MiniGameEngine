@@ -122,7 +122,7 @@ namespace MGE {
 	};
 }
 
-#define MGE_PROFILE 1
+#define MGE_PROFILE 0
 #if MGE_PROFILE
 #define MGE_PROFILE_BEGIN_SESSION(name, filepath) ::MGE::Instrumentor::Get().BeginSession(name, filepath)
 #define MGE_PROFILE_END_SESSION() ::MGE::Instrumentor::Get().EndSession()

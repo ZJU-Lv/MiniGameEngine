@@ -148,7 +148,7 @@
   <ItemGroup>
     <ClInclude Include="src\MGE.h" />
     <ClInclude Include="src\MGE\Core\Application.h" />
-    <ClInclude Include="src\MGE\Core\Core.h" />
+    <ClInclude Include="src\MGE\Core\Base.h" />
     <ClInclude Include="src\MGE\Core\EntryPoint.h" />
     <ClInclude Include="src\MGE\Core\Input.h" />
     <ClInclude Include="src\MGE\Core\KeyCodes.h" />

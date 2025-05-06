@@ -1,4 +1,4 @@
-#include "Core.h"
+#include "Base.h"
 
 #include "Window.h"
 #include "MGE/Core/LayerStack.h"

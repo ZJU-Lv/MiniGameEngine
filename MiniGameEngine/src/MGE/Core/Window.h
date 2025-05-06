@@ -2,7 +2,7 @@
 
 #include "precompiled.h"
 
-#include "MGE/Core/Core.h"
+#include "MGE/Core/Base.h"
 #include "MGE/Events/Event.h"
 
 namespace MGE {
