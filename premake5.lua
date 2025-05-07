@@ -1,6 +1,6 @@
 workspace "MiniGameEngine"
 	architecture "x64"
-	startproject "Sandbox"
+	startproject "MGE-Editor"
 
 	configurations
 	{

@@ -947,6 +947,9 @@
     <ClCompile Include="src\MGE\Core\Log.cpp">
       <Filter>src\MGE\Core</Filter>
     </ClCompile>
+    <ClCompile Include="src\MGE\Core\Window.cpp">
+      <Filter>src\MGE\Core</Filter>
+    </ClCompile>
     <ClCompile Include="src\MGE\ImGui\ImGuiBuild.cpp">
       <Filter>src\MGE\ImGui</Filter>
     </ClCompile>
@@ -1019,6 +1022,5 @@
     <ClCompile Include="vendor\stb_image\stb_image.cpp">
       <Filter>vendor\stb_image</Filter>
     </ClCompile>
-    <ClCompile Include="src\MGE\Core\Window.cpp" />
   </ItemGroup>
 </Project>
