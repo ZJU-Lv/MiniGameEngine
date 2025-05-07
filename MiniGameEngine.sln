@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MGE-Editor", "MGE-Editor\MGE-Editor.vcxproj", "{D2015B99-BEB9-9CE6-27C1-7542139837D7}"
+EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MiniGameEngine", "MiniGameEngine\MiniGameEngine.vcxproj", "{021D160A-EEEA-0910-D77E-7A36C3EBE574}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glad", "MiniGameEngine\vendor\glad\glad.vcxproj", "{DD62977C-C999-980D-7286-7E105E9C140F}"
@@ -24,6 +26,12 @@ Global
 		{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}.Dist|x64.Build.0 = Dist|x64
 		{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}.Release|x64.ActiveCfg = Release|x64
 		{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}.Release|x64.Build.0 = Release|x64
+		{D2015B99-BEB9-9CE6-27C1-7542139837D7}.Debug|x64.ActiveCfg = Debug|x64
+		{D2015B99-BEB9-9CE6-27C1-7542139837D7}.Debug|x64.Build.0 = Debug|x64
+		{D2015B99-BEB9-9CE6-27C1-7542139837D7}.Dist|x64.ActiveCfg = Dist|x64
+		{D2015B99-BEB9-9CE6-27C1-7542139837D7}.Dist|x64.Build.0 = Dist|x64
+		{D2015B99-BEB9-9CE6-27C1-7542139837D7}.Release|x64.ActiveCfg = Release|x64
+		{D2015B99-BEB9-9CE6-27C1-7542139837D7}.Release|x64.Build.0 = Release|x64
 		{021D160A-EEEA-0910-D77E-7A36C3EBE574}.Debug|x64.ActiveCfg = Debug|x64
 		{021D160A-EEEA-0910-D77E-7A36C3EBE574}.Debug|x64.Build.0 = Debug|x64
 		{021D160A-EEEA-0910-D77E-7A36C3EBE574}.Dist|x64.ActiveCfg = Dist|x64

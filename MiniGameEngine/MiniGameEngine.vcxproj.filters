@@ -10,6 +10,9 @@
     <Filter Include="src\MGE\Core">
       <UniqueIdentifier>{ED45CEB9-D9A8-5D5E-822E-96146E7029E1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\MGE\Debug">
+      <UniqueIdentifier>{AB5EA3F3-171F-1F2A-E059-68A74CD96306}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src\MGE\Events">
       <UniqueIdentifier>{B986996B-A554-8D71-8EE8-FD977A5569D6}</UniqueIdentifier>
     </Filter>
@@ -87,6 +90,9 @@
     <ClInclude Include="src\MGE\Core\Window.h">
       <Filter>src\MGE\Core</Filter>
     </ClInclude>
+    <ClInclude Include="src\MGE\Debug\Instrumentor.h">
+      <Filter>src\MGE\Debug</Filter>
+    </ClInclude>
     <ClInclude Include="src\MGE\Events\ApplicationEvent.h">
       <Filter>src\MGE\Events</Filter>
     </ClInclude>
@@ -103,6 +109,9 @@
       <Filter>src\MGE\ImGui</Filter>
     </ClInclude>
     <ClInclude Include="src\MGE\Renderer\Buffer.h">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Renderer\Framebuffer.h">
       <Filter>src\MGE\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\MGE\Renderer\GraphicsContext.h">
@@ -139,6 +148,9 @@
       <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLFramebuffer.h">
       <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h">
@@ -921,9 +933,6 @@
     <ClInclude Include="vendor\stb_image\stb_image.h">
       <Filter>vendor\stb_image</Filter>
     </ClInclude>
-    <ClInclude Include="src\MGE\Debug\Instrumentor.h" />
-    <ClInclude Include="src\MGE\Renderer\Framebuffer.h" />
-    <ClInclude Include="src\Platform\OpenGL\OpenGLFramebuffer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MGE\Core\Application.cpp">
@@ -945,6 +954,9 @@
       <Filter>src\MGE\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\MGE\Renderer\Buffer.cpp">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\Renderer\Framebuffer.cpp">
       <Filter>src\MGE\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\MGE\Renderer\OrthographicCamera.cpp">
@@ -980,6 +992,9 @@
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp">
       <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLFramebuffer.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp">
       <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
@@ -1004,7 +1019,6 @@
     <ClCompile Include="vendor\stb_image\stb_image.cpp">
       <Filter>vendor\stb_image</Filter>
     </ClCompile>
-    <ClCompile Include="src\MGE\Renderer\Framebuffer.cpp" />
-    <ClCompile Include="src\Platform\OpenGL\OpenGLFramebuffer.cpp" />
+    <ClCompile Include="src\MGE\Core\Window.cpp" />
   </ItemGroup>
 </Project>

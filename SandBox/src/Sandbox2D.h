@@ -20,7 +20,6 @@ private:
 	// Temp
 	MGE::Ref<MGE::VertexArray> m_SquareVA;
 	MGE::Ref<MGE::Shader> m_FlatColorShader;
-	MGE::Ref<MGE::Framebuffer> m_Framebuffer;
 	
 	MGE::Ref<MGE::Texture2D> m_CheckerboardTexture;
 

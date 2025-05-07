@@ -13,7 +13,7 @@ namespace MGE {
 	class Application
 	{
 	public:
-		Application();
+		Application(const std::string& name = "MGE App");
 		virtual ~Application();
 
 		void Run();
@@ -32,7 +32,7 @@ namespace MGE {
 		bool OnWindowClose(WindowCloseEvent& e);
 		bool OnWindowResize(WindowResizeEvent& e);
 	private:
-		std::unique_ptr<Window> m_Window;
+		Scope<Window> m_Window;
 		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		bool m_Minimized = false;
