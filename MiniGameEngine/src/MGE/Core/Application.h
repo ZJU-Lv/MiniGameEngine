@@ -19,6 +19,8 @@ namespace MGE {
 		void Run();
 		void Close();
 
+		ImGuiLayer* GetImGuiLayer() { return m_ImGuiLayer; }
+
 		void OnEvent(Event& e);
 
 		void PushLayer(Layer* layer);
