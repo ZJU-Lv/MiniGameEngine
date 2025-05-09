@@ -18,6 +18,7 @@ IncludeDir["glad"] = "MiniGameEngine/vendor/glad/include"
 IncludeDir["imgui"] = "MiniGameEngine/vendor/imgui"
 IncludeDir["glm"] = "MiniGameEngine/vendor/glm"
 IncludeDir["stb_image"] = "MiniGameEngine/vendor/stb_image"
+IncludeDir["entt"] = "MiniGameEngine/vendor/entt/include"
 
 include "MiniGameEngine/vendor/glfw"
 include "MiniGameEngine/vendor/glad"
@@ -61,7 +62,8 @@ project "MiniGameEngine"
 		"%{IncludeDir.glad}",
 		"%{IncludeDir.imgui}",
 		"%{IncludeDir.glm}",
-		"%{IncludeDir.stb_image}"
+		"%{IncludeDir.stb_image}",
+		"%{IncludeDir.entt}"
 	}
 
 	links 
@@ -176,7 +178,8 @@ project "MGE-Editor"
 			"MiniGameEngine/src",
 			"MiniGameEngine/vendor",
 			"%{IncludeDir.glm}",
-			"%{IncludeDir.imgui}"
+			"%{IncludeDir.imgui}",
+			"%{IncludeDir.entt}"
 		}
 	
 		links

@@ -23,6 +23,9 @@ namespace MGE {
 		MGE::Ref<MGE::Shader> m_FlatColorShader;
 		MGE::Ref<MGE::Framebuffer> m_Framebuffer;
 
+		Ref<Scene> m_ActiveScene;
+		entt::entity m_SquareEntity;
+
 		MGE::Ref<MGE::Texture2D> m_CheckerboardTexture;
 
 		bool m_ViewportFocused = false, m_ViewportHovered = false;

@@ -79,7 +79,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>MGE_PLATFORM_WINDOWS;MGE_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\MiniGameEngine\vendor\spdlog\include;..\MiniGameEngine\src;..\MiniGameEngine\vendor;..\MiniGameEngine\vendor\glm;..\MiniGameEngine\vendor\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\MiniGameEngine\vendor\spdlog\include;..\MiniGameEngine\src;..\MiniGameEngine\vendor;..\MiniGameEngine\vendor\glm;..\MiniGameEngine\vendor\imgui;..\MiniGameEngine\vendor\entt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -97,7 +97,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>MGE_PLATFORM_WINDOWS;MGE_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\MiniGameEngine\vendor\spdlog\include;..\MiniGameEngine\src;..\MiniGameEngine\vendor;..\MiniGameEngine\vendor\glm;..\MiniGameEngine\vendor\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\MiniGameEngine\vendor\spdlog\include;..\MiniGameEngine\src;..\MiniGameEngine\vendor;..\MiniGameEngine\vendor\glm;..\MiniGameEngine\vendor\imgui;..\MiniGameEngine\vendor\entt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -119,7 +119,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>MGE_PLATFORM_WINDOWS;MHE_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\MiniGameEngine\vendor\spdlog\include;..\MiniGameEngine\src;..\MiniGameEngine\vendor;..\MiniGameEngine\vendor\glm;..\MiniGameEngine\vendor\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\MiniGameEngine\vendor\spdlog\include;..\MiniGameEngine\src;..\MiniGameEngine\vendor;..\MiniGameEngine\vendor\glm;..\MiniGameEngine\vendor\imgui;..\MiniGameEngine\vendor\entt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
