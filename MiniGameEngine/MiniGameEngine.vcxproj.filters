@@ -934,6 +934,7 @@
     <ClInclude Include="src\MGE\Scene\Components.h" />
     <ClInclude Include="src\MGE\Scene\Entity.h" />
     <ClInclude Include="src\MGE\Renderer\Camera.h" />
+    <ClInclude Include="src\MGE\Scene\SceneCamera.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MGE\Core\Application.cpp">
@@ -1025,5 +1026,6 @@
     </ClCompile>
     <ClCompile Include="src\MGE\Scene\Scene.cpp" />
     <ClCompile Include="src\MGE\Scene\Entity.cpp" />
+    <ClCompile Include="src\MGE\Scene\SceneCamera.cpp" />
   </ItemGroup>
 </Project>
