@@ -17,6 +17,7 @@
 #include "MGE/ImGui/ImGuiLayer.h"
 
 #include "MGE/Scene/Scene.h"
+#include "MGE/Scene/Entity.h"
 #include "MGE/Scene/Components.h"
 
 // ---Renderer------------------------

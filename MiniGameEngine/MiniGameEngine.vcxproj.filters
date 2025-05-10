@@ -932,6 +932,7 @@
     </ClInclude>
     <ClInclude Include="src\MGE\Scene\Scene.h" />
     <ClInclude Include="src\MGE\Scene\Components.h" />
+    <ClInclude Include="src\MGE\Scene\Entity.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MGE\Core\Application.cpp">
@@ -1022,5 +1023,6 @@
       <Filter>vendor\stb_image</Filter>
     </ClCompile>
     <ClCompile Include="src\MGE\Scene\Scene.cpp" />
+    <ClCompile Include="src\MGE\Scene\Entity.cpp" />
   </ItemGroup>
 </Project>

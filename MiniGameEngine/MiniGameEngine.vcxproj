@@ -177,6 +177,7 @@
     <ClInclude Include="src\MGE\Renderer\Texture.h" />
     <ClInclude Include="src\MGE\Renderer\VertexArray.h" />
     <ClInclude Include="src\MGE\Scene\Components.h" />
+    <ClInclude Include="src\MGE\Scene\Entity.h" />
     <ClInclude Include="src\MGE\Scene\Scene.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
@@ -460,6 +461,7 @@
     <ClCompile Include="src\MGE\Renderer\Shader.cpp" />
     <ClCompile Include="src\MGE\Renderer\Texture.cpp" />
     <ClCompile Include="src\MGE\Renderer\VertexArray.cpp" />
+    <ClCompile Include="src\MGE\Scene\Entity.cpp" />
     <ClCompile Include="src\MGE\Scene\Scene.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
