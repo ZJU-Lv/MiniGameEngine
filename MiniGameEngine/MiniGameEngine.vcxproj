@@ -165,6 +165,7 @@
     <ClInclude Include="src\MGE\Events\MouseEvent.h" />
     <ClInclude Include="src\MGE\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\MGE\Renderer\Buffer.h" />
+    <ClInclude Include="src\MGE\Renderer\Camera.h" />
     <ClInclude Include="src\MGE\Renderer\Framebuffer.h" />
     <ClInclude Include="src\MGE\Renderer\GraphicsContext.h" />
     <ClInclude Include="src\MGE\Renderer\OrthographicCamera.h" />

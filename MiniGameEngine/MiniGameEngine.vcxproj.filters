@@ -933,6 +933,7 @@
     <ClInclude Include="src\MGE\Scene\Scene.h" />
     <ClInclude Include="src\MGE\Scene\Components.h" />
     <ClInclude Include="src\MGE\Scene\Entity.h" />
+    <ClInclude Include="src\MGE\Renderer\Camera.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MGE\Core\Application.cpp">
