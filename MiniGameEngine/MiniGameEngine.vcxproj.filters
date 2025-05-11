@@ -935,6 +935,7 @@
     <ClInclude Include="src\MGE\Scene\Entity.h" />
     <ClInclude Include="src\MGE\Renderer\Camera.h" />
     <ClInclude Include="src\MGE\Scene\SceneCamera.h" />
+    <ClInclude Include="src\MGE\Scene\ScriptableEntity.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MGE\Core\Application.cpp">
