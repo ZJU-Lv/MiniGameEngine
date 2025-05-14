@@ -19,10 +19,12 @@ IncludeDir["imgui"] = "MiniGameEngine/vendor/imgui"
 IncludeDir["glm"] = "MiniGameEngine/vendor/glm"
 IncludeDir["stb_image"] = "MiniGameEngine/vendor/stb_image"
 IncludeDir["entt"] = "MiniGameEngine/vendor/entt/include"
+IncludeDir["yaml_cpp"] = "MiniGameEngine/vendor/yaml-cpp/include"
 
 include "MiniGameEngine/vendor/glfw"
 include "MiniGameEngine/vendor/glad"
 include "MiniGameEngine/vendor/imgui"
+include "MiniGameEngine/vendor/yaml-cpp"
 
 project "MiniGameEngine"
 	location "MiniGameEngine"
@@ -63,7 +65,8 @@ project "MiniGameEngine"
 		"%{IncludeDir.imgui}",
 		"%{IncludeDir.glm}",
 		"%{IncludeDir.stb_image}",
-		"%{IncludeDir.entt}"
+		"%{IncludeDir.entt}",
+		"%{IncludeDir.yaml_cpp}"
 	}
 
 	links 
@@ -71,6 +74,7 @@ project "MiniGameEngine"
 		"glfw",
 		"glad",
 		"imgui",
+		"yaml-cpp",
 		"opengl32.lib"
 	}
 
@@ -80,7 +84,8 @@ project "MiniGameEngine"
 		defines
 		{
 			"MGE_PLATFORM_WINDOWS",
-			"GLFW_INCLUDE_NONE"
+			"GLFW_INCLUDE_NONE",
+			"YAML_CPP_STATIC_DEFINE"
 		}
 
 	filter "configurations:Debug"

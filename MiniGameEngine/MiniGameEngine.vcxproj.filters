@@ -22,6 +22,9 @@
     <Filter Include="src\MGE\Renderer">
       <UniqueIdentifier>{BB2711AF-A720-3001-D052-1586BCAA0F0D}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\MGE\Scene">
+      <UniqueIdentifier>{52C1B1F4-BE81-2D2B-87BC-76A8F33B7207}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src\Platform">
       <UniqueIdentifier>{21CA02E5-0D2D-9289-B6B2-CA3FA2F45D0C}</UniqueIdentifier>
     </Filter>
@@ -111,6 +114,9 @@
     <ClInclude Include="src\MGE\Renderer\Buffer.h">
       <Filter>src\MGE\Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="src\MGE\Renderer\Camera.h">
+      <Filter>src\MGE\Renderer</Filter>
+    </ClInclude>
     <ClInclude Include="src\MGE\Renderer\Framebuffer.h">
       <Filter>src\MGE\Renderer</Filter>
     </ClInclude>
@@ -143,6 +149,24 @@
     </ClInclude>
     <ClInclude Include="src\MGE\Renderer\VertexArray.h">
       <Filter>src\MGE\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Scene\Components.h">
+      <Filter>src\MGE\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Scene\Entity.h">
+      <Filter>src\MGE\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Scene\Scene.h">
+      <Filter>src\MGE\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Scene\SceneCamera.h">
+      <Filter>src\MGE\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Scene\SceneSerializer.h">
+      <Filter>src\MGE\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MGE\Scene\ScriptableEntity.h">
+      <Filter>src\MGE\Scene</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h">
       <Filter>src\Platform\OpenGL</Filter>
@@ -930,12 +954,6 @@
     <ClInclude Include="vendor\stb_image\stb_image.h">
       <Filter>vendor\stb_image</Filter>
     </ClInclude>
-    <ClInclude Include="src\MGE\Scene\Scene.h" />
-    <ClInclude Include="src\MGE\Scene\Components.h" />
-    <ClInclude Include="src\MGE\Scene\Entity.h" />
-    <ClInclude Include="src\MGE\Renderer\Camera.h" />
-    <ClInclude Include="src\MGE\Scene\SceneCamera.h" />
-    <ClInclude Include="src\MGE\Scene\ScriptableEntity.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MGE\Core\Application.cpp">
@@ -992,6 +1010,18 @@
     <ClCompile Include="src\MGE\Renderer\VertexArray.cpp">
       <Filter>src\MGE\Renderer</Filter>
     </ClCompile>
+    <ClCompile Include="src\MGE\Scene\Entity.cpp">
+      <Filter>src\MGE\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\Scene\Scene.cpp">
+      <Filter>src\MGE\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\Scene\SceneCamera.cpp">
+      <Filter>src\MGE\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MGE\Scene\SceneSerializer.cpp">
+      <Filter>src\MGE\Scene</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp">
       <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
@@ -1025,8 +1055,5 @@
     <ClCompile Include="vendor\stb_image\stb_image.cpp">
       <Filter>vendor\stb_image</Filter>
     </ClCompile>
-    <ClCompile Include="src\MGE\Scene\Scene.cpp" />
-    <ClCompile Include="src\MGE\Scene\Entity.cpp" />
-    <ClCompile Include="src\MGE\Scene\SceneCamera.cpp" />
   </ItemGroup>
 </Project>
