@@ -17,6 +17,12 @@ namespace MGE {
 		virtual void OnImGuiRender() override;
 		void OnEvent(MGE::Event& e) override;
 	private:
+		bool OnKeyPressed(KeyPressedEvent& e);
+
+		void NewScene();
+		void OpenScene();
+		void SaveSceneAs();
+	private:
 		MGE::OrthographicCameraController m_CameraController;
 
 		// Temp
