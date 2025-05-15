@@ -20,6 +20,7 @@ IncludeDir["glm"] = "MiniGameEngine/vendor/glm"
 IncludeDir["stb_image"] = "MiniGameEngine/vendor/stb_image"
 IncludeDir["entt"] = "MiniGameEngine/vendor/entt/include"
 IncludeDir["yaml_cpp"] = "MiniGameEngine/vendor/yaml-cpp/include"
+IncludeDir["ImGuizmo"] = "MiniGameEngine/vendor/ImGuizmo"
 
 include "MiniGameEngine/vendor/glfw"
 include "MiniGameEngine/vendor/glad"
@@ -49,6 +50,9 @@ project "MiniGameEngine"
 		"%{prj.name}/vendor/glm/glm/**.inl",
 		"%{prj.name}/vendor/stb_image/**.h",
 		"%{prj.name}/vendor/stb_image/**.cpp",
+
+		"%{prj.name}/vendor/ImGuizmo/ImGuizmo.h",
+		"%{prj.name}/vendor/ImGuizmo/ImGuizmo.cpp"
 	}
 
 	defines
@@ -66,7 +70,8 @@ project "MiniGameEngine"
 		"%{IncludeDir.glm}",
 		"%{IncludeDir.stb_image}",
 		"%{IncludeDir.entt}",
-		"%{IncludeDir.yaml_cpp}"
+		"%{IncludeDir.yaml_cpp}",
+		"%{IncludeDir.ImGuizmo}"
 	}
 
 	links 
@@ -77,6 +82,9 @@ project "MiniGameEngine"
 		"yaml-cpp",
 		"opengl32.lib"
 	}
+
+	filter "files:MiniGameEngine/vendor/ImGuizmo/**.cpp"
+	flags { "NoPCH" }
 
 	filter "system:windows"
 		systemversion "latest"
@@ -184,7 +192,8 @@ project "MGE-Editor"
 			"MiniGameEngine/vendor",
 			"%{IncludeDir.glm}",
 			"%{IncludeDir.imgui}",
-			"%{IncludeDir.entt}"
+			"%{IncludeDir.entt}",
+			"%{IncludeDir.ImGuizmo}"
 		}
 	
 		links
