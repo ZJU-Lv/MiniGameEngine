@@ -167,6 +167,7 @@
     <ClInclude Include="src\MGE\Math\Math.h" />
     <ClInclude Include="src\MGE\Renderer\Buffer.h" />
     <ClInclude Include="src\MGE\Renderer\Camera.h" />
+    <ClInclude Include="src\MGE\Renderer\EditorCamera.h" />
     <ClInclude Include="src\MGE\Renderer\Framebuffer.h" />
     <ClInclude Include="src\MGE\Renderer\GraphicsContext.h" />
     <ClInclude Include="src\MGE\Renderer\OrthographicCamera.h" />
@@ -459,6 +460,7 @@
     <ClCompile Include="src\MGE\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\MGE\Math\Math.cpp" />
     <ClCompile Include="src\MGE\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\MGE\Renderer\EditorCamera.cpp" />
     <ClCompile Include="src\MGE\Renderer\Framebuffer.cpp" />
     <ClCompile Include="src\MGE\Renderer\OrthographicCamera.cpp" />
     <ClCompile Include="src\MGE\Renderer\OrthographicCameraController.cpp" />

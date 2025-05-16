@@ -3,6 +3,8 @@
 #include "MGE.h"
 #include "Panels/SceneHierarchyPanel.h"
 
+#include "MGE/Renderer/EditorCamera.h"
+
 namespace MGE {
 	class EditorLayer : public Layer
 	{
@@ -36,6 +38,8 @@ namespace MGE {
 		Entity m_SecondCamera;
 
 		bool m_PrimaryCamera = true;
+
+		EditorCamera m_EditorCamera;
 
 		MGE::Ref<MGE::Texture2D> m_CheckerboardTexture;
 

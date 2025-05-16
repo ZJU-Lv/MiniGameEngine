@@ -2,6 +2,7 @@
 
 #include "MGE/Core/Base.h"
 #include "MGE/Core/KeyCodes.h"
+#include "MGE/Core/MouseButtonCodes.h"
 
 namespace MGE {
 

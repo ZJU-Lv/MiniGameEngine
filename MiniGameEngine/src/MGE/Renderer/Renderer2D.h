@@ -4,6 +4,7 @@
 #include "Texture.h"
 
 #include "MGE/Renderer/Camera.h"
+#include "MGE/Renderer/EditorCamera.h"
 
 namespace MGE {
 
@@ -14,6 +15,7 @@ namespace MGE {
 		static void Shutdown();
 
 		static void BeginScene(const Camera& camera, const glm::mat4& transform);
+		static void BeginScene(const EditorCamera& camera);
 		static void BeginScene(const OrthographicCamera& camera); // TODO: Remove
 		static void EndScene();
 		static void Flush();
