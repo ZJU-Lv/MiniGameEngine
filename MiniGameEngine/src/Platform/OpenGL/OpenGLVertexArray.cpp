@@ -73,6 +73,17 @@ namespace MGE {
 				case ShaderDataType::Float2:
 				case ShaderDataType::Float3:
 				case ShaderDataType::Float4:
+				{
+					glEnableVertexAttribArray(index);
+					glVertexAttribPointer(index,
+						element.GetComponentCount(),
+						ShaderDataTypeToOpenGLBaseType(element.Type),
+						element.Normalized ? GL_TRUE : GL_FALSE,
+						layout.GetStride(),
+						(const void*)element.Offset);
+					index++;
+					break;
+				}
 				case ShaderDataType::Int:
 				case ShaderDataType::Int2:
 				case ShaderDataType::Int3:
@@ -80,10 +91,9 @@ namespace MGE {
 				case ShaderDataType::Bool:
 				{
 					glEnableVertexAttribArray(index);
-					glVertexAttribPointer(index,
+					glVertexAttribIPointer(index,
 						element.GetComponentCount(),
 						ShaderDataTypeToOpenGLBaseType(element.Type),
-						element.Normalized ? GL_TRUE : GL_FALSE,
 						layout.GetStride(),
 						(const void*)element.Offset);
 					index++;
