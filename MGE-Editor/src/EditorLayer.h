@@ -2,6 +2,7 @@
 
 #include "MGE.h"
 #include "Panels/SceneHierarchyPanel.h"
+#include "Panels/ContentBrowserPanel.h"
 
 #include "MGE/Renderer/EditorCamera.h"
 
@@ -56,5 +57,6 @@ namespace MGE {
 
 		// Panels
 		SceneHierarchyPanel m_SceneHierarchyPanel;
+		ContentBrowserPanel m_ContentBrowserPanel;
 	};
 }
