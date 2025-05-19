@@ -10,10 +10,22 @@
 #include "MGE/ImGui/ImGuiLayer.h"
 
 namespace MGE {
+	struct ApplicationCommandLineArgs
+	{
+		int Count = 0;
+		char** Args = nullptr;
+
+		const char* operator[](int index) const
+		{
+			MGE_CORE_ASSERT(index < Count, "Invalid argument index!");
+			return Args[index];
+		}
+	};
+
 	class Application
 	{
 	public:
-		Application(const std::string& name = "MGE App");
+		Application(const std::string& name = "MGE App", ApplicationCommandLineArgs args = ApplicationCommandLineArgs());
 		virtual ~Application();
 
 		void Run();
@@ -30,10 +42,12 @@ namespace MGE {
 
 		inline static Application& Get() { return *s_Instance; }
 
+		ApplicationCommandLineArgs GetCommandLineArgs() const { return m_CommandLineArgs; }
 	private:
 		bool OnWindowClose(WindowCloseEvent& e);
 		bool OnWindowResize(WindowResizeEvent& e);
 	private:
+		ApplicationCommandLineArgs m_CommandLineArgs;
 		Scope<Window> m_Window;
 		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
@@ -45,5 +59,5 @@ namespace MGE {
 	};
 
 	// To be defined in CLIENT
-	Application* createApplication();
+	Application* createApplication(ApplicationCommandLineArgs args);
 }
