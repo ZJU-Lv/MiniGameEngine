@@ -9,8 +9,8 @@ namespace MGE {
 	class MGEEditor : public Application
 	{
 	public:
-		MGEEditor()
-			: Application("MGE Editor")
+		MGEEditor(ApplicationCommandLineArgs args)
+			: Application("MGE Editor", args)
 		{
 			PushLayer(new EditorLayer());
 		}
@@ -21,8 +21,8 @@ namespace MGE {
 		}
 	};
 
-	MGE::Application* createApplication()
+	MGE::Application* createApplication(ApplicationCommandLineArgs args)
 	{
-		return new MGEEditor();
+		return new MGEEditor(args);
 	}
 }

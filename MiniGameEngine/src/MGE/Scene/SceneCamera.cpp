@@ -30,6 +30,7 @@ namespace MGE {
 
 	void SceneCamera::SetViewportSize(uint32_t width, uint32_t height)
 	{
+		MGE_CORE_ASSERT(width > 0 && height > 0, "Invalid width or height!");
 		m_AspectRatio = (float)width / (float)height;
 		RecalculateProjection();
 	}
