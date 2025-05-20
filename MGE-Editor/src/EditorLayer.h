@@ -25,6 +25,7 @@ namespace MGE {
 
 		void NewScene();
 		void OpenScene();
+		void OpenScene(const std::filesystem::path& path);
 		void SaveSceneAs();
 	private:
 		MGE::OrthographicCameraController m_CameraController;
