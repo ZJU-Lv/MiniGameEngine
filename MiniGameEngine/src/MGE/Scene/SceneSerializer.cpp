@@ -183,7 +183,15 @@ namespace MGE {
 		std::stringstream strStream;
 		strStream << stream.rdbuf();
 
-		YAML::Node data = YAML::Load(strStream.str());
+		YAML::Node data;
+		try
+		{
+			data = YAML::Load(strStream.str());
+		}
+		catch (YAML::ParserException e)
+		{
+			return false;
+		}
 		if (!data["Scene"])
 			return false;
 
