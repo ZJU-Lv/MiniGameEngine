@@ -1,14 +1,22 @@
 #pragma once
 
+#include "SceneCamera.h"
+#include "MGE/Core/UUID.h"
+#include "MGE/Renderer/Texture.h"
+
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtx/quaternion.hpp>
 
-#include "SceneCamera.h"
-#include "ScriptableEntity.h"
-#include "MGE/Renderer/Texture.h"
-
 namespace MGE {
+
+	struct IDComponent
+	{
+		UUID ID;
+
+		IDComponent() = default;
+		IDComponent(const IDComponent&) = default;
+	};
 
 	struct TagComponent
 	{
@@ -62,6 +70,9 @@ namespace MGE {
 		CameraComponent() = default;
 		CameraComponent(const CameraComponent&) = default;
 	};
+
+	// Forward declaration
+	class ScriptableEntity;
 
 	struct NativeScriptComponent
 	{

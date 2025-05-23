@@ -4,6 +4,7 @@
 
 #include "MGE/Core/Timestep.h"
 #include "MGE/Renderer/EditorCamera.h"
+#include "MGE/Core/UUID.h"
 
 class b2World;
 
@@ -18,6 +19,7 @@ namespace MGE {
 		~Scene();
 
 		Entity CreateEntity(const std::string& name = std::string());
+		Entity CreateEntityWithUUID(UUID uuid, const std::string& name = std::string());
 		void DestroyEntity(Entity entity);
 
 		void OnRuntimeStart();

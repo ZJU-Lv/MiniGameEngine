@@ -157,6 +157,7 @@
     <ClInclude Include="src\MGE\Core\Log.h" />
     <ClInclude Include="src\MGE\Core\MouseButtonCodes.h" />
     <ClInclude Include="src\MGE\Core\TimeStep.h" />
+    <ClInclude Include="src\MGE\Core\UUID.h" />
     <ClInclude Include="src\MGE\Core\Window.h" />
     <ClInclude Include="src\MGE\Debug\Instrumentor.h" />
     <ClInclude Include="src\MGE\Events\ApplicationEvent.h" />
@@ -455,6 +456,7 @@
     <ClCompile Include="src\MGE\Core\Layer.cpp" />
     <ClCompile Include="src\MGE\Core\LayerStack.cpp" />
     <ClCompile Include="src\MGE\Core\Log.cpp" />
+    <ClCompile Include="src\MGE\Core\UUID.cpp" />
     <ClCompile Include="src\MGE\Core\Window.cpp" />
     <ClCompile Include="src\MGE\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\MGE\ImGui\ImGuiLayer.cpp" />
