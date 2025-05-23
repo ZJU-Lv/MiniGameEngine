@@ -21,11 +21,13 @@ IncludeDir["stb_image"] = "MiniGameEngine/vendor/stb_image"
 IncludeDir["entt"] = "MiniGameEngine/vendor/entt/include"
 IncludeDir["yaml_cpp"] = "MiniGameEngine/vendor/yaml-cpp/include"
 IncludeDir["ImGuizmo"] = "MiniGameEngine/vendor/ImGuizmo"
+IncludeDir["box2d"] = "MiniGameEngine/vendor/box2d/include"
 
 include "MiniGameEngine/vendor/glfw"
 include "MiniGameEngine/vendor/glad"
 include "MiniGameEngine/vendor/imgui"
 include "MiniGameEngine/vendor/yaml-cpp"
+include "MiniGameEngine/vendor/box2d"
 
 project "MiniGameEngine"
 	location "MiniGameEngine"
@@ -71,7 +73,8 @@ project "MiniGameEngine"
 		"%{IncludeDir.stb_image}",
 		"%{IncludeDir.entt}",
 		"%{IncludeDir.yaml_cpp}",
-		"%{IncludeDir.ImGuizmo}"
+		"%{IncludeDir.ImGuizmo}",
+		"%{IncludeDir.box2d}"
 	}
 
 	links 
@@ -80,6 +83,7 @@ project "MiniGameEngine"
 		"glad",
 		"imgui",
 		"yaml-cpp",
+		"box2d",
 		"opengl32.lib"
 	}
 
