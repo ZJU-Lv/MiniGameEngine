@@ -1,33 +1,72 @@
 Scene: Untitled
 Entities:
-  - Entity: 12837192831273
+  - Entity: 16830030396477328828
     TagComponent:
-      Tag: Green Square
+      Tag: floor1
     TransformComponent:
-      Translation: [3.5, 1.70000005, 0]
-      Rotation: [0, 0, 0]
-      Scale: [1, 1, 1]
+      Translation: [-3.3709023, -0.897244215, 0.0938379019]
+      Rotation: [-0.0536181964, 0.0630357265, -0.465910256]
+      Scale: [5.85765457, 0.384051293, 1.44671929]
     SpriteRendererComponent:
-      Color: [0, 1, 0, 1]
-  - Entity: 12837192831273
+      Color: [0.972972989, 0.882320166, 0.0338098705, 1]
+    Rigidbody2DComponent:
+      BodyType: Static
+      FixedRotation: false
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      Size: [0.5, 0.5]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0.589999974
+      RestitutionThreshold: 0.5
+  - Entity: 3569711187636033555
     TagComponent:
-      Tag: Red Square
+      Tag: box
     TransformComponent:
-      Translation: [0, 0, 0]
-      Rotation: [0, 0, 0]
-      Scale: [1, 1, 1]
+      Translation: [-2.9717629, 0.665315211, 0.0044670105]
+      Rotation: [0, 0, 0.783414245]
+      Scale: [0.603492856, 0.520362198, 1]
     SpriteRendererComponent:
-      Color: [1, 0, 0, 1]
-  - Entity: 12837192831273
+      Color: [0.0656370521, 0.209940195, 1, 1]
+    Rigidbody2DComponent:
+      BodyType: Dynamic
+      FixedRotation: false
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      Size: [0.5, 0.5]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+      RestitutionThreshold: 0.5
+  - Entity: 2497354036138920968
     TagComponent:
-      Tag: Camera A
+      Tag: floor2
     TransformComponent:
-      Translation: [2, 0, 0]
+      Translation: [0.435608625, -3.44386625, 0.231205717]
+      Rotation: [0.0196395367, -0.0775641426, 0.44787854]
+      Scale: [7.45884514, 0.384051293, 1.44672012]
+    SpriteRendererComponent:
+      Color: [0.972972989, 0.882320166, 0.0338098705, 1]
+    Rigidbody2DComponent:
+      BodyType: Static
+      FixedRotation: false
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      Size: [0.5, 0.5]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0.589999974
+      RestitutionThreshold: 0.5
+  - Entity: 8010914820075487840
+    TagComponent:
+      Tag: camera
+    TransformComponent:
+      Translation: [-1.78568578, -2.35120797, 9.42830849]
       Rotation: [0, 0, 0]
       Scale: [1, 1, 1]
     CameraComponent:
       Camera:
-        ProjectionType: 1
+        ProjectionType: 0
         PerspectiveFOV: 0.785398185
         PerspectiveNear: 0.00999999978
         PerspectiveFar: 1000
@@ -35,22 +74,4 @@ Entities:
         OrthographicNear: -1
         OrthographicFar: 1
       Primary: true
-      FixedAspectRatio: false
-  - Entity: 12837192831273
-    TagComponent:
-      Tag: Camera B
-    TransformComponent:
-      Translation: [-4, 0, 0]
-      Rotation: [0, 0, 0]
-      Scale: [1, 1, 1]
-    CameraComponent:
-      Camera:
-        ProjectionType: 1
-        PerspectiveFOV: 0.785398185
-        PerspectiveNear: 0.00999999978
-        PerspectiveFar: 1000
-        OrthographicSize: 10
-        OrthographicNear: -1
-        OrthographicFar: 1
-      Primary: false
       FixedAspectRatio: false
