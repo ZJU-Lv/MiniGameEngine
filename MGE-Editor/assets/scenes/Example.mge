@@ -4,13 +4,23 @@ Entities:
     TagComponent:
       Tag: circle
     TransformComponent:
-      Translation: [-0.761847794, 0.618397117, 0.184299409]
+      Translation: [-1.5188638, -0.620322764, 0.184299409]
       Rotation: [0, 0, 0]
       Scale: [1, 1, 1.00000012]
     CircleRendererComponent:
       Color: [0, 0.448724419, 0.937254906, 0.70588237]
-      Thickness: 0.275000006
-      Fade: 0.261000007
+      Thickness: 0.200000003
+      Fade: 0
+    Rigidbody2DComponent:
+      BodyType: Static
+      FixedRotation: false
+    CircleCollider2DComponent:
+      Offset: [0.5, 0]
+      Radius: 1.20000005
+      Density: 1
+      Friction: 0.5
+      Restitution: 1
+      RestitutionThreshold: 0.5
   - Entity: 8010914820075487840
     TagComponent:
       Tag: camera
@@ -33,9 +43,9 @@ Entities:
     TagComponent:
       Tag: floor2
     TransformComponent:
-      Translation: [0.435608625, -3.44386625, 0.231205717]
-      Rotation: [0.0196395367, -0.0775641426, 0.44787854]
-      Scale: [7.45884514, 0.384051293, 1.44672012]
+      Translation: [0.790433109, -2.07063603, 0.231205717]
+      Rotation: [0.413755894, 0.206339091, -2.65211558]
+      Scale: [7.45885277, 0.384051323, 1.44672227]
     SpriteRendererComponent:
       Color: [0.972972989, 0.882320166, 0.0338098705, 1]
     Rigidbody2DComponent:
@@ -52,7 +62,7 @@ Entities:
     TagComponent:
       Tag: box
     TransformComponent:
-      Translation: [-3.89457893, 1.1970998, 0.0044670105]
+      Translation: [0.0863214433, 0.833580971, 0.0044670105]
       Rotation: [0, 0, -3.019454]
       Scale: [0.603492856, 0.520362198, 1]
     SpriteRendererComponent:
@@ -71,9 +81,9 @@ Entities:
     TagComponent:
       Tag: floor1
     TransformComponent:
-      Translation: [-3.3709023, -0.897244215, 0.0938379019]
-      Rotation: [-0.0536181964, 0.0630357265, -0.465910256]
-      Scale: [5.85765457, 0.384051293, 1.44671929]
+      Translation: [-2.48439884, -1.91303825, 0.0938379169]
+      Rotation: [0.0915675089, 0.519244015, -3.03828192]
+      Scale: [5.85766077, 0.384048551, 1.44671929]
     SpriteRendererComponent:
       Color: [0.972972989, 0.882320166, 0.0338098705, 1]
     Rigidbody2DComponent:
@@ -81,8 +91,8 @@ Entities:
       FixedRotation: false
     BoxCollider2DComponent:
       Offset: [0, 0]
-      Size: [0.5, 0.5]
+      Size: [1.5, 0.5]
       Density: 1
-      Friction: 0.5
+      Friction: 0
       Restitution: 0.589999974
       RestitutionThreshold: 0.5
