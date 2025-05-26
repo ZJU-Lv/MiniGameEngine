@@ -270,7 +270,7 @@ namespace MGE {
 				Renderer2D::DrawCircle(transform.GetTransform(), circle.Color, circle.Thickness, circle.Fade, (int)entity);
 			}
 		}
-
+		
 		Renderer2D::EndScene();
 	}
 
