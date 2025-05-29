@@ -1,5 +1,26 @@
 Scene: Untitled
 Entities:
+  - Entity: 11055253577874781469
+    TagComponent:
+      Tag: Empty Entity
+    TransformComponent:
+      Translation: [-0.772295594, 1.48808455, 0]
+      Rotation: [0, 0, 0]
+      Scale: [1, 1, 1]
+    CircleRendererComponent:
+      Color: [1, 1, 1, 1]
+      Thickness: 1
+      Fade: 0.00499999989
+    Rigidbody2DComponent:
+      BodyType: Dynamic
+      FixedRotation: false
+    CircleCollider2DComponent:
+      Offset: [0, 0]
+      Radius: 0.5
+      Density: 1
+      Friction: 0.5
+      Restitution: 1
+      RestitutionThreshold: 0.5
   - Entity: 5451479940069936758
     TagComponent:
       Tag: circle
@@ -66,7 +87,7 @@ Entities:
       Rotation: [0, 0, -3.019454]
       Scale: [0.603492856, 0.520362198, 1]
     SpriteRendererComponent:
-      Color: [0.0656370521, 0.209940195, 1, 1]
+      Color: [1, 0.0656370521, 0.585128367, 1]
     Rigidbody2DComponent:
       BodyType: Dynamic
       FixedRotation: false
