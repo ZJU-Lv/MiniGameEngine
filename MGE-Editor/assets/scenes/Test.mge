@@ -1,0 +1,81 @@
+Scene: Untitled
+Entities:
+  - Entity: 5282858024599818216
+    TagComponent:
+      Tag: Camera
+    TransformComponent:
+      Translation: [0, 0, 7.9000001]
+      Rotation: [0, 0, 0]
+      Scale: [1, 1, 1]
+    CameraComponent:
+      Camera:
+        ProjectionType: 0
+        PerspectiveFOV: 0.785398185
+        PerspectiveNear: 0.00999999978
+        PerspectiveFar: 1000
+        OrthographicSize: 10
+        OrthographicNear: -1
+        OrthographicFar: 1
+      Primary: true
+      FixedAspectRatio: false
+  - Entity: 9436682781350931228
+    TagComponent:
+      Tag: Rect1
+    TransformComponent:
+      Translation: [-1.95899343, 0.169528857, 0]
+      Rotation: [0, 0, -0.537512243]
+      Scale: [4.0999999, 0.360000014, 1]
+    SpriteRendererComponent:
+      Color: [0.0261921994, 0.259191811, 0.969111979, 1]
+      TilingFactor: 1
+    Rigidbody2DComponent:
+      BodyType: Static
+      FixedRotation: false
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      Size: [0.5, 0.5]
+      Density: 1
+      Friction: 0.129999995
+      Restitution: 0.779999971
+      RestitutionThreshold: 0.5
+  - Entity: 2007679649927867957
+    TagComponent:
+      Tag: Rect2
+    TransformComponent:
+      Translation: [1.51633632, -0.65927875, 0]
+      Rotation: [0, 0, 0.649262488]
+      Scale: [4.19999981, 0.299999982, 1]
+    SpriteRendererComponent:
+      Color: [0.939043999, 0.980695009, 0, 1]
+      TilingFactor: 1
+    Rigidbody2DComponent:
+      BodyType: Static
+      FixedRotation: false
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      Size: [0.5, 0.5]
+      Density: 1
+      Friction: 0.0900000036
+      Restitution: 0.839999974
+      RestitutionThreshold: 0.5
+  - Entity: 14720324520687084662
+    TagComponent:
+      Tag: Ball
+    TransformComponent:
+      Translation: [-1.3091346, 1.45057774, 0]
+      Rotation: [0, 0, 0]
+      Scale: [0.360000014, 0.360000014, 0.360000014]
+    CircleRendererComponent:
+      Color: [1, 0, 0, 1]
+      Thickness: 1
+      Fade: 0.00499999989
+    Rigidbody2DComponent:
+      BodyType: Dynamic
+      FixedRotation: false
+    CircleCollider2DComponent:
+      Offset: [0, 0]
+      Radius: 0.5
+      Density: 1
+      Friction: 0.100000001
+      Restitution: 0.100000001
+      RestitutionThreshold: 0.5
