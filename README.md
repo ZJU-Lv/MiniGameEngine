@@ -1,4 +1,4 @@
-本项目是一个采用openGL实现的2D游戏引擎，除了脚本支持以外，具备相对完善的功能。项目参考Youtube博主The Cherno的Game Engine Series实现。
+本项目是一个采用openGL实现的2D游戏引擎，采用了批处理渲染和ECS组件化架构。除了脚本支持以外，项目具备2D引擎所需的大部分功能。项目实现了用户友好的操作界面，且可以很方便地编译运行。本项目主要参考Youtube博主The Cherno的Game Engine Series实现。
 
 ## 基本功能
 
@@ -18,6 +18,10 @@
 
 ● 基础的物理模拟，运行和关闭模拟。
 
+## 设备要求
+
+仅支持Windows操作系统，要求Windows系统下已安装Visual Studio即可。
+
 ## 如何运行
 
 1、通过git拉取仓库：https://github.com/ZJU-Lv/MiniGameEngine.git
@@ -28,9 +32,11 @@
 
 4、运行GenerateProjects.bat。
 
-5、打开MiniGameEngine.sln项目，直接编译运行即可。
+5、打开MiniGameEngine.sln项目，直接编译即可运行。
 
 ## 场景演示
+
+（由于演示的gif文件较大，浏览器加载可能需要较长时间，可以直接点开Demo1.gif和Demo2.gif观看）
 
 ![Demo1](https://github.com/ZJU-Lv/MiniGameEngine/blob/main/Demo1.gif)
 
